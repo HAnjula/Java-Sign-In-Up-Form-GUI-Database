@@ -150,7 +150,7 @@ public class SignUpForm extends JPanel implements ActionListener {
                                 preparedStmt.setString(5, userPass);
 
                                 preparedStmt.execute();
-                                JOptionPane.showMessageDialog(null, "Registration Success!!");
+                                JOptionPane.showMessageDialog(null, "Registration Success");
 
                             } catch (SQLException exception) {
                                 exception.printStackTrace();
@@ -160,13 +160,13 @@ public class SignUpForm extends JPanel implements ActionListener {
                             JOptionPane.showMessageDialog(null, "Please Fill ALL fields");
                         }
                     } else{
-                        JOptionPane.showMessageDialog(null, "Email already exists..");
+                        JOptionPane.showMessageDialog(null, "Email already exists");
                     }
                     } else {
-                        JOptionPane.showMessageDialog(null, "Please enter a valid email address..");
+                        JOptionPane.showMessageDialog(null, "Please enter a valid email address");
                     }
                     }else {
-                        JOptionPane.showMessageDialog(null, "Please accept the terms & conditions or input valid email address!!");
+                        JOptionPane.showMessageDialog(null, "Please accept the terms & conditions or input valid email address");
                     }
         }
     }
